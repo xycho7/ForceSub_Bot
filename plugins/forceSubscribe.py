@@ -37,7 +37,7 @@ async def _onUnMuteRequest(client, cb):
 
 
 
-@Client.on_edited_message((filters.text | filters.media) & ~filters.private & ~filters.edited, group=1)
+@Client.on_message((filters.text | filters.media) & ~filters.private , group=1)
 async def _check_member(client, message):
   chat_id = message.chat.id
   chat_db = sql.fs_settings(chat_id)
