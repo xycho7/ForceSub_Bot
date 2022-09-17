@@ -6,7 +6,7 @@ class Config():
   # Your bot updates channel username without @ or leave empty
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "https://t.me/+InuqTPmXUi0yZGE9")
   # Heroku postgres DB URL
-  DATABASE_URL = os.environ.get("DATABASE_URL", ""postgresql://postgres:z0JOV76zm8cOogd6vgPr@containers-us-west-88.railway.app:7271/railway)
+  DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://postgres:z0JOV76zm8cOogd6vgPr@containers-us-west-88.railway.app:7271/railway")
   # get it from my.telegram.org
   APP_ID = os.environ.get("APP_ID", 17542051)
   API_HASH = os.environ.get("API_HASH", "565f17cfd9364b79135fea9d3720c272")
