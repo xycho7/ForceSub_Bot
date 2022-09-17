@@ -42,16 +42,16 @@ async def _start(client, message):
 	        reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/UniversalBotsUpdate"),
-                           InlineKeyboardButton("Support Group", url="https://t.me/UniversalBotsSupport")
+                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/porussquad"),
+                           InlineKeyboardButton("Support Group", url="https://t.me/porussquad")
                       ],
                      [
-                           InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/JigarVarma2005")
+                           InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/WHITE00377")
                      ]
                  ]
              ),
         parse_mode="markdown",
-        reply_to_message_id=message.message_id
+        reply_to_message_id=message.message.id
         )
             return
     await client.send_message(message.chat.id,
